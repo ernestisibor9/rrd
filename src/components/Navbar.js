@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 function Navbar() {
-    const cartObj = useSelector(store=>store.cartSlice.cart)
+    // const cartObj = useSelector(store=>store.cartSlice.cart)
 
   return (
     <div>
@@ -30,9 +30,9 @@ function Navbar() {
         <li class="nav-item">
           <Link to = 'blog/ben' class="nav-link">Blog</Link>
         </li>
-        <li class="nav-item">
+        {/* <li class="nav-item">
           <Link to = 'other' class="nav-link">{cartObj.length}</Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   </div>
